@@ -36,6 +36,17 @@ cargo run --example os_threads
 
 - `examples/os_threads.rs` — demonstrates OS threads usage.
 - `examples/assembly_deref.rs` — small assembly/dereference exploration.
+- `examples/normal_syscall.rs` — example using the normal libc/syscall path to
+  perform a simple syscall demonstration.
+- `examples/raw_syscall.rs` — performs the same demonstration using a raw
+  syscall invocation (lower-level, unsafe demonstration).
+
+Run a specific example with:
+
+```bash
+cargo run --example normal_syscall
+cargo run --example raw_syscall
+```
 
 ## Contributing
 
